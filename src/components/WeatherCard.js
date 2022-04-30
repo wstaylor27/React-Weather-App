@@ -10,6 +10,7 @@ const WeatherCard = () => (
       <Feed>
         <Feed.Event>
           <Feed.Content>
+            <h5>Date</h5>
             <div className="weather-card">
               <div className="weather-card-child">Temperature</div>
               <div className="weather-card-child">Humidity</div>

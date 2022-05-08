@@ -31,13 +31,13 @@ function App() {
       <div className="container">
         <div className="top">
           <div className="location">
-            <p>Dallas</p>
+            <p>{data.name}</p>
           </div>
           <div className="temp">
-            <h1>60°F</h1>
+            {data.main ? <h1>{data.main.temp}°F</h1> : null}
           </div>
           <div className="description">
-            <p>Clouds</p>
+            {data.weather ? <p>{data.weather[0].main}</p> : null}
           </div>
           <div className="bottom">
             <div className="feels">
